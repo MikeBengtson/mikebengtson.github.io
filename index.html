@@ -438,6 +438,22 @@
   }
   .navlinks a.cta-resume:hover{ background:linear-gradient(180deg,#f4cb78,#e9ad3c); color:#13283c; }
   @media print{ .contact-btn.resume,.navlinks a.cta-resume{background:none !important;color:#000 !important;box-shadow:none !important;} }
+  /* === Agents CTA — cyan (brand "agent-readable" accent) === */
+  .contact-btn.agents{
+    background:linear-gradient(180deg,#4fd8ee,#13b5d4); color:#06283a;
+    border-color:#13b5d4; font-weight:700; box-shadow:0 6px 18px rgba(19,181,212,.30);
+  }
+  .contact-btn.agents:hover{
+    background:linear-gradient(180deg,#6ce0f2,#1cc0df); color:#06283a;
+    border-color:#1cc0df; box-shadow:0 9px 24px rgba(19,181,212,.40); transform:translateY(-1px);
+  }
+  .contact-btn.agents .hint{ color:#06384a; background:rgba(6,40,58,.10); border-color:rgba(6,40,58,.18); }
+  .navlinks a.cta-agents{
+    background:linear-gradient(180deg,#4fd8ee,#13b5d4); color:#06283a;
+    border:1px solid #13b5d4; font-weight:700; box-shadow:0 3px 10px rgba(19,181,212,.28);
+  }
+  .navlinks a.cta-agents:hover{ background:linear-gradient(180deg,#6ce0f2,#1cc0df); color:#06283a; }
+  @media print{ .contact-btn.agents,.navlinks a.cta-agents{background:none !important;color:#000 !important;box-shadow:none !important;} }
 </style>
 </head>
 <body>
@@ -458,6 +474,7 @@
       <a href="#open-source" class="desktop-only">Open Source</a>
       <a href="#availability" class="desktop-only">Availability</a>
       <a href="mike-bengtson-resume.pdf" download class="cta cta-resume">Résumé&nbsp;<span aria-hidden="true">↓</span></a>
+      <a href="https://github.com/MikeBengtson/mike-bengtson-engagement-stack/blob/main/AGENTS.md" target="_blank" rel="noopener" class="cta cta-agents">🤖&nbsp;Agents</a>
       <a href="mailto:mike.bengtson@gmail.com" class="cta">Contact</a>
     </nav>
   </div>
@@ -499,6 +516,10 @@
       <a class="contact-btn resume" href="mike-bengtson-resume.pdf" download>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>
         Download Résumé <span class="hint">PDF · 3 pages</span>
+      </a>
+      <a class="contact-btn agents" href="https://github.com/MikeBengtson/mike-bengtson-engagement-stack/blob/main/AGENTS.md" target="_blank" rel="noopener">
+        <span aria-hidden="true" style="font-size:17px;line-height:1;">🤖</span>
+        Agents <span class="hint">AGENTS.md</span>
       </a>
     </div>
   </div>
