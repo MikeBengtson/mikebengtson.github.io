@@ -422,6 +422,22 @@
     .stat .num,.section-title,h2.section-title,.comp-card h3,.role-title{color:#1f3d5c;}
     .footer-bottom a,.footer-bottom code{color:#000;background:none;}
   }
+  /* === Prominent résumé CTA — warm gold (brand accent), pops against the navy === */
+  .contact-btn.resume{
+    background:linear-gradient(180deg,#f1c265,#e3a32f); color:#13283c;
+    border-color:#e3a32f; font-weight:700; box-shadow:0 6px 18px rgba(227,163,47,.32);
+  }
+  .contact-btn.resume:hover{
+    background:linear-gradient(180deg,#f4cb78,#e9ad3c); color:#13283c;
+    border-color:#e9ad3c; box-shadow:0 9px 24px rgba(227,163,47,.42); transform:translateY(-1px);
+  }
+  .contact-btn.resume .hint{ color:#3a2c0c; background:rgba(19,40,60,.10); border-color:rgba(19,40,60,.18); }
+  .navlinks a.cta-resume{
+    background:linear-gradient(180deg,#f1c265,#e3a32f); color:#13283c;
+    border:1px solid #e3a32f; font-weight:700; box-shadow:0 3px 10px rgba(227,163,47,.30);
+  }
+  .navlinks a.cta-resume:hover{ background:linear-gradient(180deg,#f4cb78,#e9ad3c); color:#13283c; }
+  @media print{ .contact-btn.resume,.navlinks a.cta-resume{background:none !important;color:#000 !important;box-shadow:none !important;} }
 </style>
 </head>
 <body>
@@ -441,6 +457,7 @@
       <a href="#competencies" class="desktop-only">Skills</a>
       <a href="#open-source" class="desktop-only">Open Source</a>
       <a href="#availability" class="desktop-only">Availability</a>
+      <a href="mike-bengtson-resume.pdf" download class="cta cta-resume">Résumé&nbsp;<span aria-hidden="true">↓</span></a>
       <a href="mailto:mike.bengtson@gmail.com" class="cta">Contact</a>
     </nav>
   </div>
@@ -481,7 +498,7 @@
       </a>
       <a class="contact-btn resume" href="mike-bengtson-resume.pdf" download>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>
-        Résumé <span class="hint">PDF · 3 pages</span>
+        Download Résumé <span class="hint">PDF · 3 pages</span>
       </a>
     </div>
   </div>
@@ -493,7 +510,7 @@
     <div class="stats-grid">
       <div class="stat">
         <p class="num">$175M</p>
-        <p class="lbl">AHT-savings program engineered (Fidelity AIDE)</p>
+        <p class="lbl">AHT savings target (Fidelity AIDE · 5-yr)</p>
       </div>
       <div class="stat">
         <p class="num">0 → 7M+</p>
@@ -557,8 +574,8 @@
           <span class="dates">Apr 2022 – May 2026</span>
         </div>
         <p class="ctx">
-          Two mandates across four years — leading Brokerage's agentic-AI transformation and the
-          $175M AIDE servicing platform, after first rescuing and scaling the Consumer Portfolio
+          Two mandates across four years — leading Brokerage's agentic-AI transformation and AIDE, the
+          servicing platform behind a $175M AHT-savings target, after first rescuing and scaling the Consumer Portfolio
           Capability data platform.
         </p>
 
